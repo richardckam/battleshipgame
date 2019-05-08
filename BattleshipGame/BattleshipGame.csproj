@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Ship\IBattleshipCreateLine.cs" />
+    <Compile Remove="Ship\IBattleshipCreateRectangle.cs" />
+    <Compile Remove="Board\IBoardCreateRectangle.cs" />
+    <Compile Remove="Board\IBoardCreateSquare.cs" />
+    <Compile Remove="Board\ISquareBoard.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.11.0" />
+    <PackageReference Include="NUnit.Console" Version="3.10.0" />
+  </ItemGroup>
+
+</Project>
